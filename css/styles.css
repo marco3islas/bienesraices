@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 2;
+}
+
+/*Globales*/
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.contenedor {
+  max-width: 120rem;
+  /** == 1200px**/
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.8rem;
+  margin: 3rem 1rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+/* Utilidades */
+.seccion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+.contenido-centrado{
+  max-width: 100rem;
+}
+
+/* Botones */
+.boton {
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  margin-top: 3rem;
+  border-radius: 5px;
+  box-shadow: .1rem .1rem 1rem rgba(157, 156, 154, 0.80);
+  transition: 300ms;
+}
+.boton:hover{
+  box-shadow: 0 0 1rem rgba(246, 247, 249, 0.65);
+}
+
+.boton-amarillo {
+  background-color: #E08709;
+  width: 18rem;
+  text-align: center;
+  border: none;
+}
+
+.boton-verde {
+  background-color: #71b100;  
+}
+.boton:hover{
+  cursor: pointer;
+}
+/* Header */
+.site-header{
+  background-color: #333;
+  padding: 1rem 0 3rem;
+}
+.inicio {
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+.contenido-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenido-header h1 {
+  color: white;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  line-height: 2;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+/* Navegacion */
+.navegacion a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+  transition: 300ms;
+}
+
+.navegacion a:hover {
+  color: #71b100;
+}
+
+.navegacion a:last-of-type {
+  margin: 0;
+}
+
+/* Iconos Nosotros */
+.iconos-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.icono {
+  flex-basis: 33%;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.icono h3 {
+  text-transform: uppercase;
+  margin: 1.5rem;
+}
+
+.seccion h2{
+  margin: 2rem;
+}
+
+/* Anuncios */
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anuncio {
+  flex-basis: 30%;
+  border: 1px solid #b5b5b5;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 .5rem gray;
+}
+
+.contenido-anuncio {
+  padding: 2rem;
+  text-align: center;
+}
+
+.precio-anuncio {
+  color: #71b100;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.iconos-caracteristicas{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 1rem;
+  padding: 0;
+  max-width: 50rem;
+}
+.iconos-caracteristicas li{
+  display: flex;
+  justify-content: space-around;
+}
+.iconos-caracteristicas li img{
+  margin-right: 1rem;
+}
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Contacto Home  */
+.imagen-contacto {
+  background-image: url("../img/encuentra.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.contenido-contacto {
+  flex: 1;
+}
+.contenido-contacto p{
+  font-size: 1.8rem;
+}
+/* Seccion Inferior */
+.seccion-inferior{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+.seccion-inferior .blog{
+  flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales{
+  flex-basis: calc(40% - 3rem);
+}
+.entrada-blog{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem .5rem;
+}
+.entrada-blog .imagen{
+  flex-basis: 60%;
+}
+.entrada-blog .texto-entrada{
+  flex-basis: calc(40% - 2rem);
+}
+.texto-entrada a{
+  color: #000;
+  text-decoration: none;
+  margin: 5rem 0;
+}
+.texto-entrada h4::after{
+  content: "";
+  display: block;
+  width: 15rem;
+  height: .5rem;
+  background-color: #71b100;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.texto-entrada span{
+  color: #E08709;
+  font-weight: 700;
+}
+/*testimoniales*/
+
+.testimonial{
+  background-color: #71b100;
+  font-size: 2rem;
+  padding: 2rem;
+  color: white;
+  border-radius: 1.5rem;
+
+}
+blockquote{
+  text-align: justify;
+}
+.testimonial p{
+  text-align: right;
+}
+.testimonial blockquote::before{
+  content: "";
+  background-image: url("../img/comilla.svg");
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -1.5rem;
+}
+.testimonial blockquote{
+  position: relative;
+  line-height: 5rem;
+  padding-left: 5rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  
+}
+/* FOOTER */
+footer{
+  margin-bottom: 0;
+  padding: 0;
+}
+.site-footer{
+  background-color: #333;
+  margin: 0;
+}
+.contenedor-footer{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer p{
+  color: white;
+}
+/*  Internas  */
+.contenido-nosotros{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+/*Detalle*/
+.resumen-propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 1rem;
+}
+
+/* Contacto */
+label{
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* input not, las modificaciones, excluyendo al que esta nombrandose.   */
+fieldset{
+  padding: 5rem;
+  background-color: #F5F5F5;
+}
+
+.contacto p{
+  font-size: 2rem;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1.5rem;
+  color: #71b100;
+  font-size: 2rem;
+}
+
+
+
+form legend{
+  font-size: 2.5rem; 
+  color: #222; 
+}
+
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea{
+  height: 20rem;
+}
+.forma-contacto{
+  max-width: 25rem;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
